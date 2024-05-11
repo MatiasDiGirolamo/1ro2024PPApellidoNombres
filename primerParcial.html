@@ -428,7 +428,9 @@
         }
 
     function agregarRegistro() {
-        limpiarEstilos(); 
+
+
+            limpiarEstilos(); 
             let validacion = 0
             const id =  GenerarID();
             const nombre = document.getElementById("Nombreinput").value;
@@ -505,7 +507,7 @@
 
             `;
             tabla.appendChild(fila);
-            
+            limpiarCamposFormulario();
             document.getElementById("abm").style.display = "none";
             document.getElementById("FormDatos").style.display = "block";
         }
